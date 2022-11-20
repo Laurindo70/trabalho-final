@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1001717193517",
+    "firebase_url": "https://trabalho-final-867c3-default-rtdb.firebaseio.com",
+    "project_id": "trabalho-final-867c3",
+    "storage_bucket": "trabalho-final-867c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001717193517:android:a972cd40cf2be095b851a4",
+        "android_client_info": {
+          "package_name": "com.unigran.prova"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001717193517-k8q0cgshiqbit3epmjk4duecom8jbhpc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unigran.prova",
+            "certificate_hash": "84acc8263a8ac652d2c30dd78886b2cd204ea68b"
+          }
+        },
+        {
+          "client_id": "1001717193517-bvk0hc0v7v6u83brh00ettvj9b5kvqv2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-y0QKdWMdw2LzaOmjYsvZalyz9Z9xGZs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001717193517-bvk0hc0v7v6u83brh00ettvj9b5kvqv2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
