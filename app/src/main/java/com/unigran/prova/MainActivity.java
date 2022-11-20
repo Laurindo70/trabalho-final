@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void telaEncomendas(View view){
-
+        Intent encomendas = new Intent(getApplicationContext(), tela_encomenda.class);
+        startActivity(encomendas);
     }
 }
