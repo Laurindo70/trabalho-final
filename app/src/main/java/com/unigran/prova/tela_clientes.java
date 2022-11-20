@@ -1,13 +1,18 @@
 package com.unigran.prova;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.unigran.prova.model.Cliente;
 
 import java.util.LinkedList;
@@ -31,6 +36,8 @@ public class tela_clientes extends AppCompatActivity {
         enderecoCliente = findViewById(R.id.enderecoCliente);
 
         databaseReference = FirebaseDatabase.getInstance().getReference();
+
+        lerCliente();
     }
 
     public void salvar(View view){
@@ -41,5 +48,27 @@ public class tela_clientes extends AppCompatActivity {
 
         nomeCliente.setText("");
         enderecoCliente.setText("");
+    }
+
+    public void lerCliente(){
+        DatabaseReference clientes = databaseReference.child("clientes");
+
+        listaClientes.clear();
+        clientes.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot dados:snapshot.getChildren()
+                     ) {
+                    Cliente cliente = dados.getValue(Cliente.class);
+                    listaClientes.add(cliente);
+                    Log.i("Clientes", dados.child("nome").getValue().toString());
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Log.i("Firabase", error.toString());
+            }
+        });
     }
 }

@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Prova"
         tools:targetApi="31">
         <activity
+            android:name=".tela_encomenda"
+            android:exported="false" />
+        <activity
             android:name=".tela_flores"
             android:exported="false" />
         <activity

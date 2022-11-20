@@ -10,4 +10,8 @@
     <string name="flores_tela">Flores</string>
     <string name="nome_flor">Nome Flor:</string>
     <string name="salvar_flor">Salvar Flor</string>
+    <string name="encomendas_tela">Encomendas</string>
+    <string name="nome_cliente_enc">Nome Cliente:</string>
+    <string name="nome_flor_enc">Nome Flor:</string>
+    <string name="salvar_encomenda">Salvar Encomenda</string>
 </resources>
