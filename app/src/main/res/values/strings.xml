@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Prova</string>
+    <string name="clientes">Clientes</string>
+    <string name="flores">Flores</string>
+    <string name="encomendas">Encomendas</string>
+    <string name="tela_clientes_clientes">Clientes</string>
+    <string name="nome_cliente">Nome Cliente:</string>
+    <string name="salvar_cliente">Salvar Cliente</string>
+    <string name="endereco_cliente">Endereco Cliente</string>
+    <string name="flores_tela">Flores</string>
+    <string name="nome_flor">Nome Flor:</string>
+    <string name="salvar_flor">Salvar Flor</string>
 </resources>
