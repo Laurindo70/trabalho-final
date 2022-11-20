@@ -20,7 +20,7 @@ public class tela_flores extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_flores);
 
-        nomeFlor = findViewById(R.id.nomeCliente);
+        nomeFlor = findViewById(R.id.nomeFlor);
         databaseReference = FirebaseDatabase.getInstance().getReference();
     }
 
