@@ -44,5 +44,10 @@
             android:layout_height="wrap_content"
             android:onClick="salvarFlor"
             android:text="@string/salvar_flor" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listagemFlores"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
