@@ -61,7 +61,28 @@ public class tela_encomenda extends AppCompatActivity {
 
     }
 
+    public void lerEncomendas(){
+        DatabaseReference encomendas = databaseReference.child("clientes");
 
+        listaEncomendas.clear();
+
+        encomendas.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot dados:snapshot.getChildren()
+                ) {
+                    Encomenda encomenda = dados.getValue(Encomenda.class);
+                    listaEncomendas.add(encomenda);
+                    Log.i("Encomendas", dados.child("nomeCliente").getValue().toString());
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Log.i("Firabase", error.toString());
+            }
+        });
+    }
 
     public boolean lerCliente(){
         DatabaseReference clientes = databaseReference.child("clientes");
